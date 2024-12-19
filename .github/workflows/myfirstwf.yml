@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 jobs:
   Explore-GitHub-Actions:
-    runs-on: ubuntu-latest
+    runs-on: myrunner
     steps:
       - run: echo "My name ${{ vars.MY_NAME }}."
       - run: echo "My secrets name ${{ secrets.MY_SECRET_NAME }}."
